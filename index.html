@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header container">
+    <section class="header__content">
+      <div class="header__main">
+        <div class="logo">
+          <div id="menu" class="menu">
+            <img src="images/icon-menu.svg" alt="menu">
+          </div>
+          <img src="images/logo.svg" alt="logo">
+        </div>
+        <nav id="navegation" class="navegation">
+          <div id="close" class="close">
+            <img src="images/icon-close.svg" alt="close">
+          </div>
+          <a href="#" class="navegation__link">Collections</a>
+          <a href="#" class="navegation__link">Men</a>
+          <a href="#" class="navegation__link">Women</a>
+          <a href="#" class="navegation__link">About</a>
+          <a href="#" class="navegation__link">Contact</a>
+        </nav>
+      </div>
+      <div class="account">
+        <div id="cart" class="account__cart">
+          <img src="images/icon-cart.svg" alt="cart">
+        </div>
+        <div class="account__avatar">
+          <img src="images/image-avatar.png" alt="avatar">
+        </div>
+        <div class="cart">
+          <p class="cart__title">Cart</p>
+          <div class="cart__products"></div>
+        </div>
+      </div>
+      
+    </section>
+  </header>
+
+  <main class="product">
+    <div class="product__container">
+      <section class="product__slider">
+        <div class="product__image-div">
+          <div class="arrow arrow--normal arrow--previous">
+            <img class="arrow__image" src="images/icon-previous.svg" alt="arrow previous">
+          </div>
+            <img  src="images/image-product-1.jpg" alt="product" class="product__image">
+          <div class="arrow arrow--normal arrow--next">
+            <img class="arrow__image" src="images/icon-next.svg" alt="arrow next">
+          </div>
+        </div>
+      <div class="product__thumbnails">
+        <div class="product__thumbnail-div">
+          <img class="product__thumbnail" src="images/image-product-1-thumbnail.jpg" alt="thumbnail">
+        </div>
+        <div class="product__thumbnail-div">
+          <img class="product__thumbnail" src="images/image-product-2-thumbnail.jpg" alt="thumbnail">
+        </div>
+        <div class="product__thumbnail-div">
+          <img class="product__thumbnail" src="images/image-product-3-thumbnail.jpg" alt="thumbnail">
+        </div>
+        <div class="product__thumbnail-div">
+          <img class="product__thumbnail" src="images/image-product-4-thumbnail.jpg" alt="thumbnail">
+        </div>
+      </div>
+      
+      </section>
+      <section class="product__content">
+      <p class="product__brand">Sneaker Company</p>
+      <h1 id="name" class="product__title">Fall Limited Edition Sneakers</h1>
+      <p class="product__description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="product__prices">
+        <div class="product__actual-prices">
+          <p id="price" class="product__price">$<span>125</span>.00</p>
+          <p class="product__discount--porcent">50%</p>
+        </div>
+        <p class="product__discount">$250.00</p>
+      </div>
+      <div class="options">
+        <div class="options__content">
+          <button id="minus" class="options__option">-</button>
+          <input id="amount" class="options__amount" type="number" min="1" value="1">
+          <button id="plus" class="options__option">+</button>
+        </div>
+        <button id="buy" class="options__add" data-id="1"><img class="options__cart" src="images/icon-cart.svg" alt="cart">Add to cart</button>
+      </div>
+      </section>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
